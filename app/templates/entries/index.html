@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dear Diary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Dear Diary,
+                </h1>
+                <a href="{% url 'fav' %}"><h2>Favorites</h2></a>
+                <a href="{% url 'about' %}"><h2>Why?</h2></a> 
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <a href="{% url 'add' %}">Add new entry</a>
+                    </div>
+                </div>
+            </article>
+
+            {% for entry in entries%}
+                <article class="media">
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>{{entry.date_posted}}</strong>
+                                <br>{{entry.text}}
+                            </p>
+                        </div>
+                    </div>
+            </article>
+            {% endfor %}
+
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="div">
+        <img class="img"src='{% static 'images/Designer.png' %}'/>
+        </div>
+        <h1 class="foot">6 Words</h1>
+    </footer>
+</body>
+
+</html>

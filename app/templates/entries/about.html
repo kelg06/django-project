@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dear Diary</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Why?
+                </h1>
+                <a href="{% url 'home' %}"><h2>Dear Diary</h2></a>
+                <a href="{% url 'fav' %}"><h2>Favorites</h2></a>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+                <article class="media">
+                    <div class="media-content">
+                        <div class="content">
+                            <h1 class="why">Why did I decide to make this project?</h1>
+                            <p class="reminder">**This project was to challenge people to use only 6 words to describe their days.</p>
+                            <b><p class="me">My name is Markel Gladney and I made this project beacuse alot of people like myself ramble on and go all around the world to get to the point so ive made a diary so that you challenge yourself to only use 6 words to describe your day.</p></b>
+                            
+                        </div>
+                    </div>
+            </article>
+
+        </div>

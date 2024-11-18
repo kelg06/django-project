@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dear Diary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Dear Diary
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+
+            <form method="POST" acion="{% url 'add' %}">
+                {%csrf_token%}
+                <div class="field">
+                    <div class="favorite-stuff">
+                    {{form.favorites}}
+                    <p>Favorite</p>
+                    </div>
+                    <div class="control">
+                        {{form.text}}
+                    </div>
+                </div>
+
+                <div class="field is-grouped is-grouped-right">
+                    <div class="control">
+                        <button class="button is-link">Submit</button>
+                    </div>
+                </div>
+        </form>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="div">
+            <img class="img"src='{% static 'images/Designer.png' %}'/>
+            </div>
+            <h1 class="foot">6 Words</h1>
+    </footer>
+</body>
+<script src="{% static 'character.js' %}" defer></script>
+</html>

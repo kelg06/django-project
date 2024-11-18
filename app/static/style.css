@@ -1,0 +1,31 @@
+.favorite-stuff {
+    display: flex;
+
+}
+.why{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.reminder{
+    color:grey;
+}
+.me{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+}
+.foot{
+    text-align: center;
+    font-size: 36px;
+}
+.img{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+.div{
+    display: flex;
+    justify-content: center;
+}
