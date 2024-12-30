@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dear Diary</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Topics
+                </h1>
+                <a href="{% url 'fav' %}"><h2>Favorites</h2></a>
+                <a href="{% url 'about' %}"><h2>Why?</h2></a>
+                <a href="{% url 'home' %}"><h2>Dear Diary</h2></a>
+                <a href="{% url 'logout' %}"><h2>Logout</h2></a>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+                <article class="media">
+                    <div class="media-content">
+                        <div class="content">
+                            <h1>1. Current Events</h1>
+                            <ul>
+                                <li>
+                                    Breaking news, political debates, local updates.
+                                </li>
+                                <li>
+                                    Scientific breakthroughs or discoveries.
+                                </li>
+                                <li>
+                                    Global events like climate change or humanitarian crises.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>2. Weather</h1>
+                            <ul>
+                                <li>
+                                    Seasonal changes and extreme conditions.
+                                </li>
+                                <li>
+                                    How weather impacts outdoor plans or travel.
+                                </li>
+                                <li>
+                                    Unusual phenomena (e.g., northern lights, hurricanes).
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>3. Work or School</h1>
+                            <ul>
+                                <li>
+                                    Career growth, office challenges, or funny anecdotes.
+                                </li>
+                                <li>
+                                    Study tips, exams, and extracurricular activities.
+                                </li>
+                                <li>
+                                    Remote work or hybrid learning experiences.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>4. Health and Fitness</h1>
+                            <ul>
+                                <li>
+                                    Latest fitness trends (HIIT, yoga, etc.).
+                                </li>
+                                <li>
+                                    Sleep quality, hydration, and daily routines.
+                                </li>
+                                <li>
+                                    Discussions on mental health and mindfulness practices.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>5. Entertainment</h1>
+                            <ul>
+                                <li>
+                                    Reviews and recommendations of movies, series, and books.
+                                </li>
+                                <li>
+                                    Gaming: new releases, updates, and strategies.
+                                </li>
+                                <li>
+                                    Concerts, festivals, or theater shows.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>6. Sports</h1>
+                            <ul>
+                                <li>
+                                    Live scores and game highlights.
+                                </li>
+                                <li>
+                                    Athlete controversies or trade rumors.
+                                </li>
+                                <li>
+                                    Predictions for championships or tournaments.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>7. Family and Relationships</h1>
+                            <ul>
+                                <li>
+                                    Parenting tips or challenges.
+                                </li>
+                                <li>
+                                    Dating experiences, weddings, or anniversaries.
+                                </li>
+                                <li>
+                                    Intergenerational perspectives on values or traditions.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>8. Hobbies</h1>
+                            <ul>
+                                <li>
+                                    Collectibles (e.g., stamps, coins, Funko Pops).
+                                </li>
+                                <li>
+                                    DIY projects or creative crafts.
+                                </li>
+                                <li>
+                                    Video games, board games, or outdoor activities like hiking.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>9. Travel</h1>
+                            <ul>
+                                <li>
+                                    Weekend getaway spots or holiday destinations.
+                                </li>
+                                <li>
+                                    Travel hacks: packing tips, finding deals.
+                                </li>
+                                <li>
+                                    Cultural experiences from trips abroad.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>10. Food and Drink</h1>
+                            <ul>
+                                <li>
+                                    Home cooking experiments or failures.
+                                </li>
+                                <li>
+                                    Specialty diets: keto, vegan, gluten-free.
+                                </li>
+                                <li>
+                                    Restaurant reviews or new cafés to try.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>11. Technology</h1>
+                            <ul>
+                                <li>
+                                    New gadgets: smartphones, wearables, gaming consoles.
+                                </li>
+                                <li>
+                                    AI tools, coding, or automation discussions.
+                                </li>
+                                <li>
+                                    Tech controversies like privacy or cybersecurity.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>12. Social Media</h1>
+                            <ul>
+                                <li>
+                                    Viral challenges or memes.
+                                </li>
+                                <li>
+                                    TikTok trends or Instagram reels.
+                                </li>
+                                <li>
+                                    Debates about social media's role in daily life.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>13. Self-Care</h1>
+                            <ul>
+                                <li>
+                                    Journaling, therapy, or mindfulness apps.
+                                </li>
+                                <li>
+                                    Ways to overcome procrastination or build habits.
+                                </li>
+                                <li>
+                                    Inspirational quotes or motivational stories.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>14. Finance</h1>
+                            <ul>
+                                <li>
+                                    Side hustles or gig economy updates.
+                                </li>
+                                <li>
+                                    Credit score tips, saving goals, or retirement plans.
+                                </li>
+                                <li>
+                                    Cryptocurrency and stock market discussions.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>15. Pop Culture</h1>
+                            <ul>
+                                <li>
+                                    Fan theories about movies or shows.
+                                </li>
+                                <li>
+                                    Red carpet events and award ceremonies.
+                                </li>
+                                <li>
+                                    Iconic fashion trends or celeb throwbacks.
+                                </li>
+                            </ul>
+                            <hr>
+                            <h1>16. Trivia</h1>
+                            <ul>
+                                <li>
+                                    Live scores and game highlights.
+                                </li>
+                                <li>
+                                    Athlete controversies or trade rumors.
+                                </li>
+                                <li>
+                                    Predictions for championships or tournaments.
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+            </article>
+
+        </div>
+</section>
+    
+</body>
+</html>

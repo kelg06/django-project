@@ -1,9 +1,9 @@
 <div align="center">
   <img style="width: 30%;" src="Designer.png" alt="project image">  
   
-  # **Head Space**
+  # **6 Words**
 
-  #### Head Space is a diary that challenges you to express your day using only 6 words.
+  #### 6 Words is a diary that challenges you to express your day using only 6 words.
 
   
 
