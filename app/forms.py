@@ -14,7 +14,3 @@ class EntryForm(ModelForm):
         super().__init__(*args,**kwargs)
         self.fields["text"].widget.attrs.update({"class":"textarea","placeholder":"What\'s on your mind?(Please Use only 6 words to describe your day)"})
         self.fields["favorites"].widget.attrs.update({"class":"favorites"})
-class CreateUserForm(UserCreationForm):
-    class Meta:
-        model = User 
-        fields=['username','email','password1','password2']
