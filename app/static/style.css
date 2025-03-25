@@ -6,6 +6,8 @@
     justify-content: center;
     display: flex;
     text-align: center;
+    font-weight:bolder;
+
 }
 .reminder{
     color:grey;
@@ -13,7 +15,8 @@
 .me{
     text-align: center;
     color:black;
-    font-size: 40px;
+    font-size: 36px;
+    font-weight:300;
 }
 .foot{
     text-align: center;
